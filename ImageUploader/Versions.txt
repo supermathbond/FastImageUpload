@@ -1,5 +1,5 @@
 ﻿[version]1.0.3.0[/version]
-[Download]Test[/Download]
+[Download]https://github.com/supermathbond/FastImageUpload/releases/download/FastImageUpload1.0.3/Image.Uploader.exe[/Download]
 [Improvements]1.0.3:[br]
 * All servers in list, working again![br]
 * Uploaded to GitHub.[br]
