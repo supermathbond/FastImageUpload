@@ -320,7 +320,7 @@ namespace ImageUploader
                     {
                         string htmlCode =
                             client.DownloadString(
-                                "https://github.com/supermathbond/FastImageUpload/blob/master/ImageUploader/Versions.txt");
+                                "https://raw.githubusercontent.com/supermathbond/FastImageUpload/master/ImageUploader/Versions.txt#");
 
                         if (htmlCode == "")
                         {
@@ -337,7 +337,7 @@ namespace ImageUploader
                         // Searchs for the Last improvements list.
                         start = htmlCode.IndexOf("[Improvements]") + "[Improvements]".Length;
                         end = htmlCode.IndexOf("[/Improvements]", start);
-                        string improvements = htmlCode.Substring(start + 1, end - 1 - start);
+                        string improvements = htmlCode.Substring(start, end - start);
                         improvements = improvements.Replace("[br]", Environment.NewLine);
 
                         // Checks if the application is up to date.
