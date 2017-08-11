@@ -21,3 +21,5 @@ For supporting more servers you need to:
 * Add the Uploader class you implemented as a new case in the StartUpload method under UploaderFactory class.
 
 If you just want to use it, download it from here: https://github.com/supermathbond/FastImageUpload/releases/download/FastImageUpload1.0.3/Image.Uploader.exe
+
+This code has a free license - you are free to use the code at any place you want, commercial or personal. Just put a credit for the repository or the author whenever you use it.
