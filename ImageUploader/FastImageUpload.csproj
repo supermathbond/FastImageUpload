@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6A77FDD-B3EC-4D9E-ACC7-B6E43A0BCEFA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageUploader</RootNamespace>
+    <AssemblyName>Image Uploader</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationIcon>Images And Icons\appIc.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessoryFuncs.cs" />
+    <Compile Include="Server - EZPhotoShare\EZPhotoShareProperties.cs" />
+    <Compile Include="Server - EZPhotoShare\EZPhotoShareUploader.cs" />
+    <Compile Include="Server - Zimg\ZimgProperties.cs" />
+    <Compile Include="Server - Zimg\ZimgUploader.cs" />
+    <Compile Include="Server - ImageBin\ImageBinProperties.cs" />
+    <Compile Include="Server - ImageBin\ImageBinUploader.cs" />
+    <Compile Include="Server - ImageVenue\ImageVenueProperties.cs" />
+    <Compile Include="Server - ImageVenue\ImageVenueUploader.cs" />
+    <Compile Include="Server - ImgBB\ImgBBProperties.cs" />
+    <Compile Include="Server - ImgBB\ImgBBUploader.cs" />
+    <Compile Include="Server - PasteBoard\PasteBoardProperties.cs" />
+    <Compile Include="Server - PasteBoard\PasteBoardUploader.cs" />
+    <Compile Include="Server - CwebPix\CwebPixProperties.cs" />
+    <Compile Include="Server - CwebPix\CwebPixUploader.cs" />
+    <Compile Include="User32Funcs.cs" />
+    <Compile Include="Server - PostImages\PostImagesProperties.cs" />
+    <Compile Include="Server - PostImages\PostImagesUploader.cs" />
+    <Compile Include="Server - FreeImageHosting\FreeImageHostingProperties.cs" />
+    <Compile Include="Server - FreeImageHosting\FreeImageHostingUploader.cs" />
+    <Compile Include="enums.cs" />
+    <Compile Include="ListOfServerProperties.cs" />
+    <Compile Include="IServerProperties.cs" />
+    <Compile Include="Server - MyG\MyGProperties.cs" />
+    <Compile Include="Server - MyG\MyGUploader.cs" />
+    <Compile Include="Windows Forms\MyMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\MyMessageBox.designer.cs">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Server - PicFront\PicFrontProperties.cs" />
+    <Compile Include="Server - PicFront\PicFrontUploader.cs" />
+    <Compile Include="Server - Siz\SizProperties.cs" />
+    <Compile Include="Server - Siz\SizUploader.cs" />
+    <Compile Include="Windows Forms\UploadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\UploadForm.Designer.cs">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows Forms\GetImage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\GetImage.Designer.cs">
+      <DependentUpon>GetImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUploader.cs" />
+    <Compile Include="Windows Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Windows Forms\MyMessageBox.resx">
+      <DependentUpon>MyMessageBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\UploadForm.resx">
+      <DependentUpon>UploadForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\GetImage.resx">
+      <DependentUpon>GetImage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UploaderFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images And Icons\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Server - CwebPix\CwebPixLogo.png" />
+    <Content Include="Server - EZPhotoShare\EZPhotoShareLogo.png" />
+    <Content Include="Server - ImageBin\ImageBinLogo.png" />
+    <Content Include="Server - ImageVenue\ImageVenueLogoSecond.jpeg" />
+    <Content Include="Server - ImgBB\ImgBBLogo.png" />
+    <Content Include="Server - MyG\MyGLogo.jpg" />
+    <Content Include="Server - PasteBoard\PasteboardLogo.png" />
+    <Content Include="Server - PostImages\postImageLogo.png" />
+    <Content Include="Server - Zimg\ZimgLogo.png" />
+    <Content Include="Versions.txt" />
+    <None Include="Server - FreeImageHosting\FreeImageHostingLogo.png" />
+    <None Include="Server - PicFront\PicFrontLogo.png" />
+    <None Include="Server - PicFront\PicFrontLogo_button.png" />
+    <None Include="Server - Siz\SizLogo.png" />
+    <Content Include="Images And Icons\appIc.ico" />
+    <None Include="Images And Icons\update-Image.png" />
+    <None Include="Images And Icons\update-ImagePressed.png" />
+    <None Include="Images And Icons\switch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

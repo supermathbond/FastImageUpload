@@ -1,0 +1,6 @@
+﻿[version]1.0.3[/version]
+[Download]Test[/Download]
+[Improvements]1.0.3:[br]
+* All servers in list, working again![br]
+* Uploaded to GitHub.[br]
+* Update mechanism is using GitHub as anchor.[/Improvements]
