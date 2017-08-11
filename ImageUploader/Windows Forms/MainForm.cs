@@ -338,7 +338,6 @@ namespace ImageUploader
                         start = htmlCode.IndexOf("[Improvements]") + "[Improvements]".Length;
                         end = htmlCode.IndexOf("[/Improvements]", start);
                         string improvements = htmlCode.Substring(start, end - start);
-                        improvements = improvements.Replace("[br]", Environment.NewLine);
 
                         // Checks if the application is up to date.
                         if (version == System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString())
